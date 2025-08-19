@@ -7,7 +7,7 @@
             </div>
         </div>
         
-        <p class="text-lg text-gray-600 font-medium">
+        <p class="text-lg text-gray-600 font-semibold">
             Kamu bisa menggunakan AI canggih ini dengan banyak fitur unggulan.
         </p>
     </div>

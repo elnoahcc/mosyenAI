@@ -7,12 +7,12 @@
     <!-- Desktop Menu -->
     <div class="hidden lg:flex flex-1 justify-center">
     <ul id="desktopMenu" class="flex gap-8 font-medium text-white bg-[#001f4d] rounded-full px-10 py-3 shadow-lg">
-        <li><a href="{{ url('/') }}" class="menu-item hover:text-sky-400 transition-colors duration-200">Home</a></li>
-        <li><a href="{{ url('/#about') }}" class="menu-item hover:text-sky-400 transition-colors duration-200">About</a></li>
-        <li><a href="{{ url('/#product') }}" class="menu-item hover:text-sky-400 transition-colors duration-200">Product</a></li>
-        <li><a href="{{ url('/#demo') }}" class="menu-item hover:text-sky-400 transition-colors duration-200">Demo</a></li>
-        <li><a href="{{ url('/pricing') }}" class="menu-item hover:text-sky-400 transition-colors duration-200">Pricing</a></li>
-        <li><a href="{{ url('/#contact') }}" class="menu-item hover:text-sky-400 transition-colors duration-200">Contact</a></li>
+        <li><a href="{{ url('/') }}" class="menu-item hover:text-sky-400 transition-colors duration-200 font-medium">Home</a></li>
+        <li><a href="{{ url('/#about') }}" class="menu-item hover:text-sky-400 transition-colors duration-200 font-medium">About</a></li>
+        <li><a href="{{ url('/#product') }}" class="menu-item hover:text-sky-400 transition-colors duration-200 font-medium">Product</a></li>
+        <li><a href="{{ url('/#demo') }}" class="menu-item hover:text-sky-400 transition-colors duration-200 font-medium">Demo</a></li>
+        <li><a href="{{ url('/pricing') }}" class="menu-item hover:text-sky-400 transition-colors duration-200 font-medium">Pricing</a></li>
+        <li><a href="{{ url('/#contact') }}" class="menu-item hover:text-sky-400 transition-colors duration-200 font-medium">Contact</a></li>
     </ul>
 </div>
 

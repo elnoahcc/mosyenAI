@@ -1,6 +1,17 @@
-<section class="py-12 px-4">
+<style>
+  .motion-fade-in {
+    transition: all 0.8s ease;
+  }
+  .motion-fade-in.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+</style>
+
+<section class="py-16 px-4 mb-28">
+
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-semibold text-blue-900 text-center mb-12">Motion AI Impact</h2>
+    <h1 class="text-3xl font-semibold text-blue-900 text-center mb-12">Motion AI Impact</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Card 1 -->
@@ -58,21 +69,19 @@
   </div>
 </section>
 
-<!-- JavaScript: Fade-in animation when cards enter viewport -->
 <script>
-  const faders = document.querySelectorAll('.motion-fade-in');
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".motion-fade-in");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.remove('opacity-0', 'translate-y-6');
-        entry.target.classList.add('opacity-100', 'translate-y-0');
-        observer.unobserve(entry.target); // Optional: animasi 1x saja
-      }
-    });
-  }, {
-    threshold: 0.1
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
   });
-
-  faders.forEach(el => observer.observe(el));
 </script>
+
