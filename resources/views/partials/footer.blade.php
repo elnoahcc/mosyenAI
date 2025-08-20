@@ -1,73 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mosyen AI</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white">
+{{-- resources/views/components/footer-mosyen.blade.php --}}
+<section class="relative bg-[#00194A] text-white mt-10 overflow-hidden">
+    {{-- Notch melengkung di tengah atas seperti HP --}}
+    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-40 h-12 bg-[#00194A] rounded-b-3xl shadow-lg"></div>
 
-  <div class="bg-[#021a4d] rounded-t-3xl relative w-full text-white overflow-hidden">
-    <!-- Bagian atas dengan potongan putih -->
-    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-12 bg-white rounded-b-3xl"></div>
-    
-    <!-- Logo pojok kanan atas -->
-    <div class="absolute top-6 right-10">
-      <img src="/assets/logomotion-white.svg" alt="Logo Mosyen" class="w-80 h-auto">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-8 relative z-10">
+          <div class="flex justify-end pr-6 mb-12">
+      <img src="/assets/logomotion-white.svg" alt="Mosyen Logo" class="h-50 w-auto md:h-24 lg:h-60">
     </div>
 
-    <div class="px-12 pt-12 pb-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-        <!-- SneakPeak -->
-        <div>
-          <h3 class="font-semibold">SneakPeak</h3>
-          <p class="mt-2 text-gray-300 text-xs leading-relaxed">
-            Mosyen AI adalah AI 3D interaktif pertama di Indonesia.
-          </p>
+
+        {{-- Grid 3 kolom untuk konten utama --}}
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
+            {{-- SneakPeak --}}
+            <div>
+                <h3 class="font-semibold text-lg mb-4 text-white">SneakPeak</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Mosyen AI adalah AI<br>
+                    3D Integrated<br>
+                    pertama di<br>
+                    Indonesia
+                </p>
+            </div>
+
+            {{-- Get in Touch --}}
+            <div>
+                <h3 class="font-semibold text-lg mb-4 text-white">Get in Touch</h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                    Kami akan mengirimkan notifikasi<br>
+                    langsung kepada anda
+                </p>
+                <div class="flex">
+                    <input type="email" 
+                           placeholder="Email Address"
+                           class="flex-1 rounded-l-lg px-4 py-3 text-black text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-500">
+                    <button class="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-r-lg font-semibold text-sm transition-colors">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+            {{-- Social --}}
+            <div>
+                <h3 class="font-semibold text-lg mb-4 text-white">Social</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Instagram</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">LinkedIn</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">X</a></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Get in Touch -->
-        <div>
-          <h3 class="font-semibold">Get in Touch</h3>
-          <p class="mt-2 text-gray-300 text-xs leading-relaxed">
-            Kami akan mengirimkan notifikasi langsung kepada anda
-          </p>
-          <div class="mt-3 flex max-w-xs">
-            <input type="email" placeholder="email anda" class="px-3 py-2 rounded-l-lg w-full text-gray-900 text-xs focus:outline-none">
-            <button class="bg-yellow-400 text-black px-4 rounded-r-lg text-xs font-semibold">Send</button>
-          </div>
+        {{-- Garis pemisah --}}
+        <div class="border-t border-gray-600 mb-8"></div>
+
+        {{-- Bagian bawah: Stats, Brand Name, dan Robot --}}
+        <div class="flex flex-col lg:flex-row justify-between items-center lg:items-end">
+            {{-- Kiri: Stats dan Brand --}}
+            <div class="text-center lg:text-left mb-8 lg:mb-0">
+                {{-- Statistik --}}
+                <div class="flex justify-center lg:justify-start space-x-8 md:space-x-12 mb-6">
+                    <div class="text-2xl md:text-4xl font-bold">100+</div>
+                    <div class="text-2xl md:text-4xl font-bold">90+</div>
+                    <div class="text-2xl md:text-4xl font-bold">80+</div>
+                </div>
+                
+                {{-- Brand Name --}}
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                    Mosyen AI<span class="text-cyan-400">.</span>
+                </h1>
+            </div>
+
+            {{-- Kanan: Robot --}}
+            <div class="flex-shrink-0">
+                <img src="{{ asset('/assets/robot-footer.svg') }}" 
+                     alt="Robot Mosyen AI" 
+                     class="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain">
+            </div>
         </div>
-
-        <!-- Sosial -->
-        <div>
-          <h3 class="font-semibold">Sosial</h3>
-          <ul class="mt-2 space-y-1 text-xs">
-            <li><a href="#" class="hover:underline">Instagram</a></li>
-            <li><a href="#" class="hover:underline">Linkedin</a></li>
-            <li><a href="#" class="hover:underline">X</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Garis pemisah -->
-      <div class="my-6 border-t border-gray-500"></div>
-
-      <!-- Bagian bawah -->
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="text-center md:text-left">
-         
-
-          <h1 class="mt-6 text-6xl font-bold">Mosyen <span class="text-blue-400">AI.</span></h1>
-        </div>
-
-        <!-- Robot image (dibesarkan) -->
-        <div class="w-[350px] md:w-[400px] mt-6 md:mt-0">
-          <img src="/assets/robot-footer.svg" alt="Robot AI" class="w-full">
-        </div>
-      </div>
     </div>
-  </div>
-
-</body>
-</html>
+</section>

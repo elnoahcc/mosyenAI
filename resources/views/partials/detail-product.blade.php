@@ -8,22 +8,24 @@
     </p>
 
     <!-- Image Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-      <!-- Kolom Kiri - 1 gambar -->
-      <div class="rounded-lg overflow-hidden shadow-lg h-full transition-all duration-1000 opacity-0 -translate-x-10" data-animate="left">
-        <img src="/assets/product/product1.jpg" alt="Robot Hand 1" class="w-full h-full object-cover">
-      </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+  <!-- Kolom Kiri -->
+  <div class="rounded-lg overflow-hidden shadow-lg h-80 transition-all duration-1000 opacity-0 -translate-x-10" data-animate="left">
+    <img src="/assets/product/product1.jpg" alt="Robot Hand 1" class="w-full h-full object-cover">
+  </div>
 
-      <!-- Kolom Kanan - 2 gambar vertikal -->
-      <div class="grid grid-rows-2 gap-6">
-        <div class="rounded-lg overflow-hidden shadow-lg transition-all duration-1000 opacity-0 translate-x-10" data-animate="right" data-delay="200">
-          <img src="/assets/product/product2.jpg" alt="Robot Hand 2" class="w-full h-full object-cover">
-        </div>
-        <div class="rounded-lg overflow-hidden shadow-lg transition-all duration-1000 opacity-0 translate-x-10" data-animate="right" data-delay="400">
-          <img src="/assets/product/product3.jpg" alt="Robot Hand 3" class="w-full h-full object-cover">
-        </div>
-      </div>
+  <!-- Kolom Kanan -->
+  <div class="grid grid-rows-2 gap-6 h-80">
+    <div class="rounded-lg overflow-hidden shadow-lg transition-all duration-1000 opacity-0 translate-x-10" data-animate="right" data-delay="200">
+      <img src="/assets/product/product2.jpg" alt="Robot Hand 2" class="w-full h-full object-cover">
     </div>
+    <div class="rounded-lg overflow-hidden shadow-lg transition-all duration-1000 opacity-0 translate-x-10" data-animate="right" data-delay="400">
+      <img src="/assets/product/product3.jpg" alt="Robot Hand 3" class="w-full h-full object-cover">
+    </div>
+  </div>
+</div>
+
+
   </div>
 </section>
 

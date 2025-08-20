@@ -11,6 +11,12 @@
      <script src="https://cdn.tailwindcss.com"></script>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+      <style>
+        html {
+        scroll-behavior: smooth;
+        }
+
+      </style>
 
 </head>
 <body class="overflow-x-hidden font-['Product_Sans']">
